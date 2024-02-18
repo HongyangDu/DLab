@@ -12,6 +12,19 @@
 	padding: 8px;
 	border-bottom: 1px solid #ddd;
 	}
+	/* 响应式设计：当屏幕尺寸小于600px时，应用这些样式 */
+	@media screen and (max-width: 600px) {
+	.content-wrapper {
+	margin-left: 10px; /* 在较小的屏幕上减少边距 */
+	}
+	table {
+	width: 100%; /* 使表格宽度适应屏幕 */
+	}
+	img {
+	max-width: 100%; /* 使图像宽度适应其容器，防止溢出 */
+	height: auto; /* 保持图像的纵横比 */
+	}
+	}
 </style>
 </head>
 <body>
