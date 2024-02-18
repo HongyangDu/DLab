@@ -12,17 +12,23 @@
 	padding: 8px;
 	border-bottom: 1px solid #ddd;
 	}
+	img.responsive-img {
+	max-width: 100%;
+	height: auto;
+	}
+	
 	/* 响应式设计：当屏幕尺寸小于600px时，应用这些样式 */
 	@media screen and (max-width: 600px) {
 	.content-wrapper {
-	margin-left: 10px; /* 在较小的屏幕上减少边距 */
+	margin-left: 10px;
 	}
-	table {
-	width: 100%; /* 使表格宽度适应屏幕 */
+	.responsive-img {
+	float: left; /* 使图片浮动，使得文字可以环绕图片 */
+	margin-right: 15px; /* 在图片和文字之间添加一些间隙 */
+	width: 50%; /* 设置图片宽度为容器宽度的50%，根据需要调整 */
 	}
-	img {
-	max-width: 100%; /* 使图像宽度适应其容器，防止溢出 */
-	height: auto; /* 保持图像的纵横比 */
+	td {
+	display: block; /* 使单元格表现得像块元素，以便图片和文字可以正确环绕 */
 	}
 	}
 </style>
@@ -40,7 +46,7 @@
 <table border="0" cellpadding="3" cellspacing="10">
 
 <tr>
-<td><a href="https://hongyangdu.github.io/GDMOPT/"><img style="vertical-align:middle" src="accessories/GDMOPT1.png"  width="200" height="inherit" border="1px" alt="" /></a></td>
+<td><a href="https://hongyangdu.github.io/GDMOPT/"><img class="responsive-img" style="vertical-align:middle" src="accessories/GDMOPT1.png"  width="200" height="inherit" border="1px" alt="" /></a></td>
 <td>
 <b>Beyond Deep Reinforcement Learning: A Tutorial on Generative Diffusion Models in Network Optimization</b>
 <br>Hongyang Du, Ruichen Zhang, Yinqiu Liu, Jiacheng Wang, Yijing Lin, Zonghang Li, Dusit Niyato, Jiawen Kang, Zehui Xiong, Shuguang Cui, Bo Ai, Haibo Zhou, Dong In Kim<br>
